@@ -11,21 +11,25 @@ function hitung() {
     median();
 }
 
+function ulang(){
+    document.getElementById("form").reset();
+}
+
 function average() {
     average = (a + b + c + d + e) / 5;
-    form2.avg.value = average;
+    form.avg.value = average;
 }
 
 function lowest() {
     var number = [a, b, c, d, e]
     var minimum = Math.min.apply(Math, number);
-    form2.min.value = minimum;
+    form.min.value = minimum;
 }
 
 function highest() {
     var number = [a, b, c, d, e];
     var maximum = Math.max.apply(Math, number);
-    form2.max.value = maximum;
+    form.max.value = maximum;
 }
 
 function median() {
@@ -33,9 +37,5 @@ function median() {
     const med = median.sort();
     const midl = Math.ceil(median.length / 2);
     const medianFunc = median.length % 2 == 0 ? (med[midl] + med[midl - 1]) / 2 : med[midl];
-    form2.med.value = medianFunc;
-}
-
-function ulang(){
-    document.getElementById("form2").reset();
+    form.med.value = medianFunc;
 }
