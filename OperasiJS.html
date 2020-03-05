@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Operator JS</title>
+
+        <script src="hitung.js"></script>
+    </head>
+
+    <style>
+        body {
+            background-color: #576574;
+        }
+    </style>
+
+    <body>
+
+        <h3>Masukkan Angka Yang Ingin Anda hitung</h3>
+
+        <form name="form">
+            <p>Masukkan Nilai Pertama   : <input type="text" id="satu"/> </p>
+            <p>Masukkan Nilai Kedua     : <input type="text" id="dua"/> </p>
+            <p>Masukkan Nilai Ketiga    : <input type="text" id="tiga"/> </p>
+            <p>Masukkan Nilai Keempat   : <input type="text" id="empat"/> </p>
+            <p>Masukkan Nilai Kelima    : <input type="text" id="lima"/> </p>
+
+            <input type="button" onclick="hitung()" value="HITUNG"/>
+            <input type="button" onclick="ulang()" value="ULANG"/>
+
+           
+        </form>
+
+        <form id="form2">
+            <p>Rata-rata        :<input type="text" name="avg" ></p>
+            <p>Nilai Terendah   :<input type="text" name="min" ></p>
+            <p>Nilai Tertinggi  :<input type="text" name="max" ></p>
+            <p>Nilai Tengah     :<input type="text" name="med" ></p>
+        </form>
+    </body>
+</html>
+
